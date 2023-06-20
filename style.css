@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    width: 500px;
+    height: 520px;
+    border-radius: 20px 20px 100px 20px;
+    padding: 50px;
+    margin-top: 60px;
+}
+.inputBirth {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    line-height: 30px;
+    color: #787878;
+    font-weight: bold;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #a3a3a3;
+}
+.inputBirth input {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #787878;
+    padding: 15px 10px;
+    font-size: 20px;
+}
+.inputBirth input::placeholder {
+    color: #787878;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn {
+    position: relative;
+}
+.btn button {
+    position: absolute;
+    bottom: -25px;
+    left: 365px;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #864cff;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.result {
+    margin-top: 50px;
+}
+.result p {
+    font-size: 80px;
+    font-weight: bold;
+}
+.result p span {
+    color: #864cff;
+}
+@media (max-width: 550px) {
+    .container {
+        width: 450px;
+        height: 450px;
+    }
+    .btn button {
+        left: 330px;
+    }
+    .result {
+        margin-top: 30px;
+    }
+    .result p {
+        font-size: 70px;
+    }
+}
+@media (max-width: 380px) {
+    .container {
+        width: 350px;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .btn button {
+        left: 230px;
+    }
+    .result p {
+        font-size: 55px;
+    }
+}
