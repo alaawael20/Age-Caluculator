@@ -8,6 +8,7 @@ body {
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,0,194,1) 41%, rgba(183,0,255,1) 100%);
 }
 .container {
     background-color: white;
